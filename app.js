@@ -54,6 +54,6 @@ function sortearAmigo(){
     }
 
     amigos=[]; //limpia la lista de amigos después de sorterar
-    actualizarListaAmigos(); //actualiza muestra la lista vacia
+    actualizarListaAmigos(); //actualiza y muestra la lista vacia
 }
 
