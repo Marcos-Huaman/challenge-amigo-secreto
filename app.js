@@ -35,6 +35,7 @@ function actualizarListaAmigos(){
 
 //funcion que sortea la lista de amigos agregados
 function sortearAmigo(){
+
     //verifica que la lista no este vacia 
     if(!amigos.length){
         alert('¡No hay amigos, La lista de amigos está vacía!');
@@ -47,8 +48,12 @@ function sortearAmigo(){
 
     //verifica si existe el elemento
     if (resultadoElemento) {
-        resultadoElemento.innerHTML = `<li>${amigoSeleccionado}</li>`;
+        resultadoElemento.innerHTML = `<li> El amigo secreto sorteado es: ${amigoSeleccionado}</li>`;
     } else {
         console.error('¡Elemento con ID "resultado" no encontrado!');
     }
+
+    amigos=[]; //limpia la lista de amigos después de sorterar
+    actualizarListaAmigos(); //actualiza muestra la lista vacia
 }
+
